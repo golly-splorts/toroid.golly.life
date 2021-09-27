@@ -24,8 +24,8 @@ var mapsApiUrl = 'https://maps.golly.life';
 
     <!--
         Versions:
-        gollyx-toroidal-pelican: 21.0.0
-        gollyx-toroidal-pelican-theme: 40.0.0
+        gollyx-toroidal-pelican: 42.0.6
+        gollyx-toroidal-pelican-theme: 42.0.1
     -->
 
 
@@ -99,14 +99,21 @@ var mapsApiUrl = 'https://maps.golly.life';
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Alewife_Arsonists">Alewife Arsonists</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Albuquerque_Solarpunks">Albuquerque Solarpunks</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Boylston_Boogers">Boylston Boogers</a>
+            <!--
+                Texas is canceled
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Baltimore_Texas">Baltimore Texas</a>
+            <a class="dropdown-item" href="https://wiki.golly.life/wiki/Ft._Worth_Piano_Tuners">Ft. Worth Piano Tuners</a>
+            -->
+            <a class="dropdown-item" href="https://wiki.golly.life/wiki/Baltimore_Piano_Tuners">Baltimore Piano_Tuners</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Delaware_Corporate_Shells">Delaware Corporate Shells</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Detroit_Grape_Chews">Detroit Grape Chews</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Elko_Astronauts">Elko Astronauts</a>
-            <a class="dropdown-item" href="https://wiki.golly.life/wiki/Ft._Worth_Piano_Tuners">Ft. Worth Piano Tuners</a>
+            <a class="dropdown-item" href="https://wiki.golly.life/wiki/Fargo_Flea_Flickers">Fargo Flea Flickers</a>
+            <a class="dropdown-item" href="https://wiki.golly.life/wiki/Grand_Junction_Conjunctions">Grand Junction Conjunctions</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Jersey_OSHA_Violations">Jersey OSHA Violations</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Long_Beach_Flightless_Birds">Long Beach Flightless Birds</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Milwaukee_Flamingos">Milwaukee Flamingos</a>
+            <a class="dropdown-item" href="https://wiki.golly.life/wiki/Mobile_Wheels">Mobile Wheels</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Orlando_Business_Majors">Orlando Business Majors</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Phoenix_Freshrolls">Phoenix Freshrolls</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Sacramento_Boot_Lickers">Sacramento Boot Lickers</a>
@@ -116,6 +123,7 @@ var mapsApiUrl = 'https://maps.golly.life';
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Seattle_Sneakers">Seattle Sneakers</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Sugar_Grove_Eavesdroppers">Sugar Grove Eavesdroppers</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Tucson_Butchers">Tucson Butchers</a>
+            <a class="dropdown-item" href="https://wiki.golly.life/wiki/Vegas_Vampires">Vegas Vampires</a>
           </div>
         </li>
 
@@ -134,10 +142,12 @@ var mapsApiUrl = 'https://maps.golly.life';
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes">
               Cups <span class="caret"></span>
           </a>
-          <div id="navbar-season-dropdown-menu" class="dropdown-menu" aria-labelledby="themes">
+          <div id="navbar-cups-dropdown-menu" class="dropdown-menu" aria-labelledby="themes">
             <a class="dropdown-item" href="https://hellmouth.golly.life">Hellmouth Cup</a>
             <a class="dropdown-item" href="https://pseudo.golly.life">Pseudo Cup</a>
             <a class="dropdown-item" href="https://toroidal.golly.life">Toroidal Cup</a>
+            <a class="dropdown-item" href="https://dragon.golly.life">Dragon Cup</a>
+            <a class="dropdown-item" href="https://rainbow.golly.life">Rainbow Cup</a>
           </div>
         </li>
 
@@ -260,15 +270,15 @@ var mapsApiUrl = 'https://maps.golly.life';
 <div class="container invisible" id="postseason-hcs-container">
 
   <div class="row justify-content-md-center postseason-series-header">
-    <div class="col-lg-8">
+    <div class="col-sm-8">
         <a name="hcs" class="padded-anchor"></a>
         <h2 class="text-center">Toroidal Cup</h2>
         <p class="text-center lead">Best of 7</p>
     </div>
   </div>
 
-  <div class="row justify-content-lg-center posteseason-leagues-container" id="hcs-leagues-container">
-    <div class="col-lg-6" id="hcs-league-container">
+  <div class="row justify-content-sm-center posteseason-leagues-container" id="hcs-leagues-container">
+    <div class="col-sm-6" id="hcs-league-container">
     </div>
   </div>
 
@@ -277,20 +287,20 @@ var mapsApiUrl = 'https://maps.golly.life';
 
 <div class="container invisible" id="postseason-lcs-container">
 
-  <div class="row justify-content-lg-center postseason-series-header" id="lcs-series-header">
-    <div class="col-lg-8">
+  <div class="row justify-content-sm-center postseason-series-header" id="lcs-series-header">
+    <div class="col-sm-8">
         <a name="lcs" class="padded-anchor"></a>
         <h2 class="text-center">Championship Series</h2>
         <p class="text-center lead">Best of 5</p>
     </div>
   </div>
 
-  <div class="row justify-content-lg-center postseason-leagues-container" id="lcs-leagues-container">
-    <div class="col-lg-6 league-container" id="lcs-league-1-container">
+  <div class="row justify-content-sm-center postseason-leagues-container" id="lcs-leagues-container">
+    <div class="col-sm-6 league-container" id="lcs-league-1-container">
       <h4 class="text-center league-container-header" id="lcs-league-1-header"><span id="lcs-league-1-series-name"></span></h4>
     </div>
 
-    <div class="col-lg-6 league-container" id="lcs-league-2-container">
+    <div class="col-sm-6 league-container" id="lcs-league-2-container">
       <h4 class="text-center league-container-header" id="lcs-league-2-header"><span id="lcs-league-2-series-name"></span></h4>
     </div>
   </div>
@@ -300,8 +310,8 @@ var mapsApiUrl = 'https://maps.golly.life';
 
 <div class="container invisible" id="postseason-lds-container">
 
-  <div class="row justify-content-lg-center postseason-series-header" id="lds-series-header">
-    <div class="col-lg-10">
+  <div class="row justify-content-sm-center postseason-series-header" id="lds-series-header">
+    <div class="col-sm-10">
       <a name="lds" class="padded-anchor"></a>
       <h2 class="text-center">Division Series</h2>
       <p class="text-center lead">Best of 5</p>
@@ -310,25 +320,25 @@ var mapsApiUrl = 'https://maps.golly.life';
 
   <div class="postseason-leagues-container" id="lds-leagues-container">
 
-    <div class="row justify-content-lg-center postseason-leagues-container" id="lds-series-1-leagues-container">
+    <div class="row justify-content-sm-center postseason-leagues-container" id="lds-series-1-leagues-container">
 
-      <div class="col-lg-6 league-container league-1-container" id="lds-league-1-series-1-container">
+      <div class="col-sm-6 league-container league-1-container" id="lds-league-1-series-1-container">
         <h4 class="text-center league-container-header"><span id="lds-league-1-series-1-name"></span></h4>
       </div>
 
-      <div class="col-lg-6 league-container league-2-container" id="lds-league-2-series-1-container">
+      <div class="col-sm-6 league-container league-2-container" id="lds-league-2-series-1-container">
         <h4 class="text-center league-container-header"><span id="lds-league-2-series-1-name"></span></h4>
       </div>
 
     </div>
 
-    <div class="row justify-content-lg-center postseason-leagues-container" id="lds-series-2-leagues-container">
+    <div class="row justify-content-sm-center postseason-leagues-container" id="lds-series-2-leagues-container">
 
-      <div class="col-lg-6 league-container league-1-container" id="lds-league-1-series-2-container">
+      <div class="col-sm-6 league-container league-1-container" id="lds-league-1-series-2-container">
         <h4 class="text-center league-container-header"><span id="lds-league-1-series-2-name"></span></h4>
       </div>
 
-      <div class="col-lg-6 league-container league-2-container" id="lds-league-2-series-2-container">
+      <div class="col-sm-6 league-container league-2-container" id="lds-league-2-series-2-container">
         <h4 class="text-center league-container-header"><span id="lds-league-2-series-2-name"></span></h4>
       </div>
 

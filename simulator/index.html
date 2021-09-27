@@ -24,8 +24,8 @@ var mapsApiUrl = 'https://maps.golly.life';
 
     <!--
         Versions:
-        gollyx-toroidal-pelican: 21.0.0
-        gollyx-toroidal-pelican-theme: 40.0.0
+        gollyx-toroidal-pelican: 42.0.6
+        gollyx-toroidal-pelican-theme: 42.0.1
     -->
 
 
@@ -99,14 +99,21 @@ var mapsApiUrl = 'https://maps.golly.life';
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Alewife_Arsonists">Alewife Arsonists</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Albuquerque_Solarpunks">Albuquerque Solarpunks</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Boylston_Boogers">Boylston Boogers</a>
+            <!--
+                Texas is canceled
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Baltimore_Texas">Baltimore Texas</a>
+            <a class="dropdown-item" href="https://wiki.golly.life/wiki/Ft._Worth_Piano_Tuners">Ft. Worth Piano Tuners</a>
+            -->
+            <a class="dropdown-item" href="https://wiki.golly.life/wiki/Baltimore_Piano_Tuners">Baltimore Piano_Tuners</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Delaware_Corporate_Shells">Delaware Corporate Shells</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Detroit_Grape_Chews">Detroit Grape Chews</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Elko_Astronauts">Elko Astronauts</a>
-            <a class="dropdown-item" href="https://wiki.golly.life/wiki/Ft._Worth_Piano_Tuners">Ft. Worth Piano Tuners</a>
+            <a class="dropdown-item" href="https://wiki.golly.life/wiki/Fargo_Flea_Flickers">Fargo Flea Flickers</a>
+            <a class="dropdown-item" href="https://wiki.golly.life/wiki/Grand_Junction_Conjunctions">Grand Junction Conjunctions</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Jersey_OSHA_Violations">Jersey OSHA Violations</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Long_Beach_Flightless_Birds">Long Beach Flightless Birds</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Milwaukee_Flamingos">Milwaukee Flamingos</a>
+            <a class="dropdown-item" href="https://wiki.golly.life/wiki/Mobile_Wheels">Mobile Wheels</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Orlando_Business_Majors">Orlando Business Majors</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Phoenix_Freshrolls">Phoenix Freshrolls</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Sacramento_Boot_Lickers">Sacramento Boot Lickers</a>
@@ -116,6 +123,7 @@ var mapsApiUrl = 'https://maps.golly.life';
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Seattle_Sneakers">Seattle Sneakers</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Sugar_Grove_Eavesdroppers">Sugar Grove Eavesdroppers</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Tucson_Butchers">Tucson Butchers</a>
+            <a class="dropdown-item" href="https://wiki.golly.life/wiki/Vegas_Vampires">Vegas Vampires</a>
           </div>
         </li>
 
@@ -134,10 +142,12 @@ var mapsApiUrl = 'https://maps.golly.life';
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes">
               Cups <span class="caret"></span>
           </a>
-          <div id="navbar-season-dropdown-menu" class="dropdown-menu" aria-labelledby="themes">
+          <div id="navbar-cups-dropdown-menu" class="dropdown-menu" aria-labelledby="themes">
             <a class="dropdown-item" href="https://hellmouth.golly.life">Hellmouth Cup</a>
             <a class="dropdown-item" href="https://pseudo.golly.life">Pseudo Cup</a>
             <a class="dropdown-item" href="https://toroidal.golly.life">Toroidal Cup</a>
+            <a class="dropdown-item" href="https://dragon.golly.life">Dragon Cup</a>
+            <a class="dropdown-item" href="https://rainbow.golly.life">Rainbow Cup</a>
           </div>
         </li>
 
@@ -170,7 +180,7 @@ var mapsApiUrl = 'https://maps.golly.life';
 
   <div class="row">
   
-      <div class="col-md-4">
+      <div class="col-sm-4">
   
           <div class="card bg-primary mb-3">
               <h4 class="card-header text-white">Scoreboard</h4>
@@ -225,7 +235,7 @@ var mapsApiUrl = 'https://maps.golly.life';
   
       </div>
   
-      <div class="col-md-4">
+      <div class="col-sm-4">
   
           <div class="card bg-primary mb-3">
               <h4 class="card-header text-white">Stats</h4>
@@ -295,7 +305,7 @@ var mapsApiUrl = 'https://maps.golly.life';
           </div>
   
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-4">
   
           <div class="card bg-primary">
               <h4 class="card-header text-white">Toroidal Control</h4>
@@ -417,7 +427,7 @@ var mapsApiUrl = 'https://maps.golly.life';
 <div class="container invisible" id="container-loading">
 
     <div class="row text-center notify-header">
-      <div class="col-md-12">
+      <div class="col-sm-12">
         <h4 class="text-success">The site is currently loading...</h4>
       </div>
     </div>
@@ -428,13 +438,13 @@ var mapsApiUrl = 'https://maps.golly.life';
 <div class="container invisible" id="container-error">
 
     <div class="row text-center notify-header">
-      <div class="col-md-12">
+      <div class="col-sm-12">
         <h2 class="text-danger">The site has experienced a technical glitch.</h2>
       </div>
     </div>
 
     <div class="row text-center notify-body">
-      <div class="col-md-12">
+      <div class="col-sm-12">
         <p>
         Ninjas have been dispatched to track down those responsible for the downtime
         and bring them back to Hellmouth Community College to fix the site.
@@ -447,7 +457,7 @@ var mapsApiUrl = 'https://maps.golly.life';
 <noscript>
   <div class="container" id="container-noscript">
     <div class="row text-center landing-header">
-      <div class="col-md-12">
+      <div class="col-sm-12">
         <h2 class="text-danger">You must have Javascript enabled to view this site.</h2>
       </div>
     </div>
